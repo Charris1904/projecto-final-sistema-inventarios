@@ -3,6 +3,7 @@ package com.ucreativa;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
+import com.ucreativa.contact.Contact;
 
 public class Invoice {
     private Contact contact;
@@ -20,8 +21,6 @@ public class Invoice {
     private Map<Project, Item> projectsByItem;
     private boolean isDraft;
 
-    public Invoice() {
-    }
 
     public Invoice(Contact contact, String documentNumber, String date, String dueDate, String filePath, List<Item> items, String purchaseMessage, Map<String, String> customFields, Category category, String internalDescription, String[] tags, Map<Project, Item> projectsByItem, boolean isDraft) {
         this.contact = contact;
@@ -160,5 +159,43 @@ public class Invoice {
 
     public void setDraft(boolean draft) {
         isDraft = draft;
+    }
+
+
+    /**
+     * @param products: All the products added to the invoice
+     * @return: Sum of taxes for all the products
+     */
+    public double calculateTaxes(List<Item> products){
+        return 0;
+    }
+
+    /**
+     * @param products: All the products added to the invoice
+     * @return: Sum of all products' cost without taxes
+     */
+    public double calculateTotal(List<Item> products){
+        return 0;
+    }
+
+    /**
+     * @return: Sum of all products' cost including the taxes
+     */
+    public double calculateTotalWithTaxes(){
+        return calculateTaxes(items) + calculateTotal(items);
+    }
+
+    /**
+     * @param item: New product which is added to the invoice
+     */
+    public void addProduct(Item item){
+        this.items.add(item);
+    }
+
+    /**
+     * @param item: Product which is removed from the invoice
+     */
+    public void deleteProduct(Item item){
+        this.items.remove(item);
     }
 }
