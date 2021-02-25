@@ -166,7 +166,7 @@ public class Invoice {
      * @param products: All the products added to the invoice
      * @return: Sum of taxes for all the products
      */
-    public double calculateTaxes(List<Item> products){
+    public double calculateTaxes(List<Product> products){
         return 0;
     }
 
@@ -174,7 +174,7 @@ public class Invoice {
      * @param products: All the products added to the invoice
      * @return: Sum of all products' cost without taxes
      */
-    public double calculateTotal(List<Item> products){
+    public double calculateTotal(List<Product> products){
         return 0;
     }
 
@@ -188,14 +188,14 @@ public class Invoice {
     /**
      * @param item: New product which is added to the invoice
      */
-    public void addProduct(Item item){
+    public void addProduct(Product item){
         this.items.add(item);
     }
 
     /**
      * @param item: Product which is removed from the invoice
      */
-    public void deleteProduct(Item item){
+    public void deleteProduct(Product item){
         this.items.remove(item);
     }
 }
