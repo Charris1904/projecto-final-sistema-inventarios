@@ -1,8 +1,11 @@
-package com.ucreativa;
+package com.ucreativa.sales;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
+
+import com.ucreativa.products.Product;
+import com.ucreativa.projects.Project;
 import com.ucreativa.contact.Contact;
 
 public class Invoice {

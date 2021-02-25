@@ -1,4 +1,4 @@
-package com.ucreativa;
+package com.ucreativa.projects;
 
 import com.ucreativa.contact.Contact;
 

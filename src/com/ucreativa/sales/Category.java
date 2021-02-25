@@ -1,4 +1,4 @@
-package com.ucreativa;
+package com.ucreativa.sales;
 
 public class Category {
     private String id;
