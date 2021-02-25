@@ -3,6 +3,7 @@ package com.ucreativa;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
+import com.ucreativa.contact.*;
 
 public class Invoice {
     private Contact contact;
@@ -10,20 +11,20 @@ public class Invoice {
     private String date;
     private String dueDate;
     private String filePath;
-    private List<Item> items;
+    private List<Product> items;
     private String purchaseMessage;
     private Map<String, String> customFields;
 
     private Category category;
     private String internalDescription;
     private String[] tags;
-    private Map<Project, Item> projectsByItem;
+    private Map<Project, Product> projectsByItem;
     private boolean isDraft;
 
     public Invoice() {
     }
 
-    public Invoice(Contact contact, String documentNumber, String date, String dueDate, String filePath, List<Item> items, String purchaseMessage, Map<String, String> customFields, Category category, String internalDescription, String[] tags, Map<Project, Item> projectsByItem, boolean isDraft) {
+    public Invoice(Contact contact, String documentNumber, String date, String dueDate, String filePath, List<Product> items, String purchaseMessage, Map<String, String> customFields, Category category, String internalDescription, String[] tags, Map<Project, Product> projectsByItem, boolean isDraft) {
         this.contact = contact;
         this.documentNumber = documentNumber;
         this.date = date;
@@ -98,11 +99,11 @@ public class Invoice {
         this.filePath = filePath;
     }
 
-    public List<Item> getItems() {
+    public List<Product> getItems() {
         return items;
     }
 
-    public void setItems(List<Item> items) {
+    public void setItems(List<Product> items) {
         this.items = items;
     }
 
@@ -146,11 +147,11 @@ public class Invoice {
         this.tags = tags;
     }
 
-    public Map<Project, Item> getProjectsByItem() {
+    public Map<Project, Product> getProjectsByItem() {
         return projectsByItem;
     }
 
-    public void setProjectsByItem(Map<Project, Item> projectsByItem) {
+    public void setProjectsByItem(Map<Project, Product> projectsByItem) {
         this.projectsByItem = projectsByItem;
     }
 

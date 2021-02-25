@@ -1,5 +1,7 @@
 package com.ucreativa;
 
+import com.ucreativa.contact.*;
+
 public class Project {
     private String name;
     private String color;
