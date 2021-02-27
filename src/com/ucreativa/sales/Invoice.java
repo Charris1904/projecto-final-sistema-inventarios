@@ -14,7 +14,7 @@ public class Invoice {
     private String date;
     private String dueDate;
     private String filePath;
-    private List<Product> items;
+    private List<Product> products;
     private String purchaseMessage;
     private Map<String, String> customFields;
 
@@ -25,13 +25,16 @@ public class Invoice {
     private boolean isDraft;
 
 
-    public Invoice(Contact contact, String documentNumber, String date, String dueDate, String filePath, List<Product> items, String purchaseMessage, Map<String, String> customFields, Category category, String internalDescription, String[] tags, Map<Project, Product> projectsByItem, boolean isDraft) {
+    public Invoice(Contact contact, String documentNumber, String date, String dueDate, String filePath, 
+    		List<Product> products, String purchaseMessage, Map<String, String> customFields, Category category, 
+    		String internalDescription, String[] tags, Map<Project, Product> projectsByItem, boolean isDraft) {
+    	
         this.contact = contact;
         this.documentNumber = documentNumber;
         this.date = date;
         this.dueDate = dueDate;
         this.filePath = filePath;
-        this.items = items;
+        this.products = products;
         this.purchaseMessage = purchaseMessage;
         this.customFields = customFields;
         this.category = category;
@@ -49,7 +52,7 @@ public class Invoice {
                 ", date='" + date + '\'' +
                 ", dueDate='" + dueDate + '\'' +
                 ", filePath='" + filePath + '\'' +
-                ", items=" + items +
+                ", items=" + products +
                 ", purchaseMessage='" + purchaseMessage + '\'' +
                 ", customFields=" + customFields +
                 ", category=" + category +
@@ -100,12 +103,12 @@ public class Invoice {
         this.filePath = filePath;
     }
 
-    public List<Product> getItems() {
-        return items;
+    public List<Product> getProducts() {
+        return products;
     }
 
-    public void setItems(List<Product> items) {
-        this.items = items;
+    public void setProducts(List<Product> products) {
+        this.products = products;
     }
 
     public String getPurchaseMessage() {
@@ -185,20 +188,20 @@ public class Invoice {
      * @return: Sum of all products' cost including the taxes
      */
     public double calculateTotalWithTaxes(){
-        return calculateTaxes(items) + calculateTotal(items);
+        return calculateTaxes(products) + calculateTotal(products);
     }
 
     /**
      * @param item: New product which is added to the invoice
      */
     public void addProduct(Product item){
-        this.items.add(item);
+        this.products.add(item);
     }
 
     /**
      * @param item: Product which is removed from the invoice
      */
     public void deleteProduct(Product item){
-        this.items.remove(item);
+        this.products.remove(item);
     }
 }
