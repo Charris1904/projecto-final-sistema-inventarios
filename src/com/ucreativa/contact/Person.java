@@ -21,7 +21,7 @@ public class Person extends Contact implements IUser{
 		this.id_person = id_person;
 	}
 	
-	//Methods Set and Get
+	//*************************** Metodos Set & Get
 	public Company getCompany() {
 		return company;
 	}
@@ -45,8 +45,17 @@ public class Person extends Contact implements IUser{
 	public void setId_person(int id_person) {
 		this.id_person = id_person;
 	}
+	
+	/**
+	 * Method that searches all the companies related to a
+	 * specific Person
+	 * @param idPerson
+	 */
+	public void getRelatedCompany(String idPerson) {
+		System.out.println("Get Related Company");
+	}
 
-	//Method ToString
+	//*************************** Metodos toString
 	@Override
 	public String toString() {
 		return "Person [id_person=" + id_person + ", company=" + company + ", job_title=" + job_title + "]";
@@ -54,13 +63,16 @@ public class Person extends Contact implements IUser{
 
 	@Override
 	public void LogIn() {
+		System.out.println("LogIn Person");
 	}
 
 	@Override
 	public void LogOut() {
+		System.out.println("LogOut Person");
 	}
 
 	@Override
 	public void ResetPassword() {
+		System.out.println("Reset Password Person");
 	}
 }

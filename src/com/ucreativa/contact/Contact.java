@@ -18,8 +18,8 @@ public class Contact {
 	protected List<String> tags;
 	protected String id_contact_type;
 	protected int id_group;
-	
-	//Constructor
+
+	// Constructor
 	public Contact(String name, String address, String email, String city, String postal_code, String province,
 			String country, int phone, int mobile, String trade_name, String website, List<String> tags,
 			String id_contact_type, int id_group) {
@@ -39,7 +39,7 @@ public class Contact {
 		this.id_group = id_group;
 	}
 
-	//Methods Set and Get
+	// *************************** Metodos Set & Get
 	public String getName() {
 		return name;
 	}
@@ -135,7 +135,7 @@ public class Contact {
 	public void setTags(List<String> tags) {
 		this.tags = tags;
 	}
-	
+
 	public String getId_contact_type() {
 		return id_contact_type;
 	}
@@ -152,7 +152,32 @@ public class Contact {
 		this.id_group = id_group;
 	}
 
-	//Method ToString
+	// *************************** Metodos Clase
+	/**
+	 * Method that will display the information related to the selected contact in
+	 * the contact list
+	 */
+	public void showContact() {
+		System.out.println("Show Contact ");
+	}
+
+	/**
+	 * This method will identify if the selected contact is a Client, Provider or
+	 * Lead
+	 */
+	public void identifyContactType() {
+		System.out.println("Identify Contact Type");
+	}
+
+	/**
+	 * Method that will display the Contact summary and the related information as
+	 * Sales, Purchases, Companies, Notes, Deals, Reports, and Billings
+	 */
+	public void displaySummary() {
+		System.out.println("Display Summary");
+	}
+
+	// Method ToString
 	@Override
 	public String toString() {
 		return "Contact [name=" + name + ", address=" + address + ", email=" + email + ", city=" + city

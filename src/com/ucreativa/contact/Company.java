@@ -15,7 +15,7 @@ public class Company extends Contact {
 		this.id_company = id_company;
 	}
 	
-	//Methods Set and Get
+	//*************************** Metodos Set & Get
 	public int getId_company() {
 		return id_company;
 	}
@@ -23,8 +23,17 @@ public class Company extends Contact {
 	public void setId_company(int id_company) {
 		this.id_company = id_company;
 	}
+	
+	/**
+	* Method that searches for all the people related to a
+	* specific Company
+	* @param idCompany
+	*/
+	public void getRelatedPerson(String idCompany) {
+		System.out.println("Get Related Person");
+	}
 
-	//Method ToString
+	//*************************** Metodos toString
 	@Override
 	public String toString() {
 		return "Company [id_company=" + id_company + "]";
