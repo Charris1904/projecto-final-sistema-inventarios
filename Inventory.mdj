@@ -2383,7 +2383,7 @@
 											"top": 102,
 											"width": 143,
 											"height": 13,
-											"text": "+ChangeEmail()",
+											"text": "+ReserPassword()",
 											"horizontalAlignment": 0
 										}
 									],
@@ -6243,7 +6243,8 @@
 								"$ref": "AAAAAAF3sUwd70LeV7c="
 							},
 							"name": "email",
-							"visibility": "protected"
+							"visibility": "protected",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -6252,7 +6253,8 @@
 								"$ref": "AAAAAAF3sUwd70LeV7c="
 							},
 							"name": "phone",
-							"visibility": "protected"
+							"visibility": "protected",
+							"type": ""
 						}
 					],
 					"operations": [
@@ -6828,7 +6830,7 @@
 							"_parent": {
 								"$ref": "AAAAAAF3scdW+tjB/hI="
 							},
-							"name": "ChangeEmail"
+							"name": "ReserPassword"
 						}
 					]
 				},
