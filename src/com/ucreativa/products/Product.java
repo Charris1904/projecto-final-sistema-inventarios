@@ -153,7 +153,9 @@ public class Product {
 		this.totalTax = totalTax;
 	}
 	
-	//Method
+	/*
+	 * This method will alert when the stock is empty
+	 * */
 	public void StockAlert(){}
 
 	//Method ToString

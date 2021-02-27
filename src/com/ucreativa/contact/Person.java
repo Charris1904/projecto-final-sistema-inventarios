@@ -2,7 +2,9 @@ package com.ucreativa.contact;
 
 import java.util.List;
 
-public class Person extends Contact{
+import com.ucreativa.IUser;
+
+public class Person extends Contact implements IUser{
 
 	private int id_person;
 	private Company company;
@@ -48,5 +50,17 @@ public class Person extends Contact{
 	@Override
 	public String toString() {
 		return "Person [id_person=" + id_person + ", company=" + company + ", job_title=" + job_title + "]";
+	}
+
+	@Override
+	public void LogIn() {
+	}
+
+	@Override
+	public void LogOut() {
+	}
+
+	@Override
+	public void ResetPassword() {
 	}
 }
