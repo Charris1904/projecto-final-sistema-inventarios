@@ -130,6 +130,7 @@
 											"model": {
 												"$ref": "AAAAAAF35btLm4C42Pk="
 											},
+											"visible": false,
 											"font": "Arial;13;0",
 											"left": 893,
 											"top": 142,
@@ -149,10 +150,10 @@
 											},
 											"font": "Arial;13;0",
 											"left": 893,
-											"top": 157,
+											"top": 144,
 											"width": 303,
 											"height": 13,
-											"text": "-name",
+											"text": "#name",
 											"horizontalAlignment": 0
 										},
 										{
@@ -166,10 +167,10 @@
 											},
 											"font": "Arial;13;0",
 											"left": 893,
-											"top": 172,
+											"top": 159,
 											"width": 303,
 											"height": 13,
-											"text": "-address",
+											"text": "#address",
 											"horizontalAlignment": 0
 										},
 										{
@@ -183,10 +184,10 @@
 											},
 											"font": "Arial;13;0",
 											"left": 893,
-											"top": 187,
+											"top": 174,
 											"width": 303,
 											"height": 13,
-											"text": "-email",
+											"text": "#email",
 											"horizontalAlignment": 0
 										},
 										{
@@ -200,10 +201,10 @@
 											},
 											"font": "Arial;13;0",
 											"left": 893,
-											"top": 202,
+											"top": 189,
 											"width": 303,
 											"height": 13,
-											"text": "-city",
+											"text": "#city",
 											"horizontalAlignment": 0
 										},
 										{
@@ -217,10 +218,10 @@
 											},
 											"font": "Arial;13;0",
 											"left": 893,
-											"top": 217,
+											"top": 204,
 											"width": 303,
 											"height": 13,
-											"text": "-postalCode",
+											"text": "#postalCode",
 											"horizontalAlignment": 0
 										},
 										{
@@ -234,10 +235,10 @@
 											},
 											"font": "Arial;13;0",
 											"left": 893,
-											"top": 232,
+											"top": 219,
 											"width": 303,
 											"height": 13,
-											"text": "-province",
+											"text": "#province",
 											"horizontalAlignment": 0
 										},
 										{
@@ -251,10 +252,10 @@
 											},
 											"font": "Arial;13;0",
 											"left": 893,
-											"top": 247,
+											"top": 234,
 											"width": 303,
 											"height": 13,
-											"text": "-country",
+											"text": "#country",
 											"horizontalAlignment": 0
 										},
 										{
@@ -268,10 +269,10 @@
 											},
 											"font": "Arial;13;0",
 											"left": 893,
-											"top": 262,
+											"top": 249,
 											"width": 303,
 											"height": 13,
-											"text": "-phone",
+											"text": "#phone",
 											"horizontalAlignment": 0
 										},
 										{
@@ -285,10 +286,10 @@
 											},
 											"font": "Arial;13;0",
 											"left": 893,
-											"top": 277,
+											"top": 264,
 											"width": 303,
 											"height": 13,
-											"text": "-mobile",
+											"text": "#mobile",
 											"horizontalAlignment": 0
 										},
 										{
@@ -302,10 +303,10 @@
 											},
 											"font": "Arial;13;0",
 											"left": 893,
-											"top": 292,
+											"top": 279,
 											"width": 303,
 											"height": 13,
-											"text": "-tradeName",
+											"text": "#tradeName",
 											"horizontalAlignment": 0
 										},
 										{
@@ -319,10 +320,10 @@
 											},
 											"font": "Arial;13;0",
 											"left": 893,
-											"top": 307,
+											"top": 294,
 											"width": 303,
 											"height": 13,
-											"text": "-webSite",
+											"text": "#webSite",
 											"horizontalAlignment": 0
 										},
 										{
@@ -336,10 +337,10 @@
 											},
 											"font": "Arial;13;0",
 											"left": 893,
-											"top": 322,
+											"top": 309,
 											"width": 303,
 											"height": 13,
-											"text": "-tags",
+											"text": "#tags",
 											"horizontalAlignment": 0
 										},
 										{
@@ -353,10 +354,10 @@
 											},
 											"font": "Arial;13;0",
 											"left": 893,
-											"top": 337,
+											"top": 324,
 											"width": 303,
 											"height": 13,
-											"text": "-contactType",
+											"text": "#contactType",
 											"horizontalAlignment": 0
 										},
 										{
@@ -370,10 +371,10 @@
 											},
 											"font": "Arial;13;0",
 											"left": 893,
-											"top": 352,
+											"top": 339,
 											"width": 303,
 											"height": 13,
-											"text": "-group",
+											"text": "#group",
 											"horizontalAlignment": 0
 										},
 										{
@@ -387,10 +388,10 @@
 											},
 											"font": "Arial;13;0",
 											"left": 893,
-											"top": 367,
+											"top": 354,
 											"width": 303,
 											"height": 13,
-											"text": "-email",
+											"text": "#email",
 											"horizontalAlignment": 0
 										},
 										{
@@ -404,10 +405,10 @@
 											},
 											"font": "Arial;13;0",
 											"left": 893,
-											"top": 382,
+											"top": 369,
 											"width": 303,
 											"height": 13,
-											"text": "-phone",
+											"text": "#phone",
 											"horizontalAlignment": 0
 										},
 										{
@@ -421,10 +422,10 @@
 											},
 											"font": "Arial;13;0",
 											"left": 893,
-											"top": 397,
+											"top": 384,
 											"width": 303,
 											"height": 13,
-											"text": "-projects",
+											"text": "#projects",
 											"horizontalAlignment": 0
 										},
 										{
@@ -438,10 +439,10 @@
 											},
 											"font": "Arial;13;0",
 											"left": 893,
-											"top": 412,
+											"top": 399,
 											"width": 303,
 											"height": 13,
-											"text": "-invoices",
+											"text": "#invoices",
 											"horizontalAlignment": 0
 										},
 										{
@@ -455,10 +456,10 @@
 											},
 											"font": "Arial;13;0",
 											"left": 893,
-											"top": 427,
+											"top": 414,
 											"width": 303,
 											"height": 13,
-											"text": "-products",
+											"text": "#products",
 											"horizontalAlignment": 0
 										}
 									],
@@ -466,7 +467,7 @@
 									"left": 888,
 									"top": 137,
 									"width": 313,
-									"height": 308
+									"height": 295
 								},
 								{
 									"_type": "UMLOperationCompartmentView",
@@ -489,7 +490,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 893,
-											"top": 450,
+											"top": 437,
 											"width": 303,
 											"height": 13,
 											"text": "+showContact()",
@@ -506,7 +507,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 893,
-											"top": 465,
+											"top": 452,
 											"width": 303,
 											"height": 13,
 											"text": "+identifyContactType()",
@@ -523,7 +524,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 893,
-											"top": 480,
+											"top": 467,
 											"width": 303,
 											"height": 13,
 											"text": "+displaySummary()",
@@ -532,7 +533,7 @@
 									],
 									"font": "Arial;13;0",
 									"left": 888,
-									"top": 445,
+									"top": 432,
 									"width": 313,
 									"height": 53
 								},
@@ -1390,7 +1391,7 @@
 											"top": 494,
 											"width": 175,
 											"height": 13,
-											"text": "+idProduct",
+											"text": "-idProduct",
 											"horizontalAlignment": 0
 										},
 										{
@@ -1825,7 +1826,7 @@
 											"top": 550,
 											"width": 205.5625,
 											"height": 13,
-											"text": "+idInvoice",
+											"text": "-idInvoice",
 											"horizontalAlignment": 0
 										},
 										{
@@ -6219,7 +6220,8 @@
 							"_parent": {
 								"$ref": "AAAAAAF3sUwd70LeV7c="
 							},
-							"name": "idContact"
+							"name": "idContact",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -6228,7 +6230,7 @@
 								"$ref": "AAAAAAF3sUwd70LeV7c="
 							},
 							"name": "name",
-							"visibility": "private",
+							"visibility": "protected",
 							"type": ""
 						},
 						{
@@ -6238,7 +6240,7 @@
 								"$ref": "AAAAAAF3sUwd70LeV7c="
 							},
 							"name": "address",
-							"visibility": "private",
+							"visibility": "protected",
 							"type": ""
 						},
 						{
@@ -6248,7 +6250,7 @@
 								"$ref": "AAAAAAF3sUwd70LeV7c="
 							},
 							"name": "email",
-							"visibility": "private",
+							"visibility": "protected",
 							"type": ""
 						},
 						{
@@ -6258,7 +6260,7 @@
 								"$ref": "AAAAAAF3sUwd70LeV7c="
 							},
 							"name": "city",
-							"visibility": "private",
+							"visibility": "protected",
 							"type": ""
 						},
 						{
@@ -6268,7 +6270,7 @@
 								"$ref": "AAAAAAF3sUwd70LeV7c="
 							},
 							"name": "postalCode",
-							"visibility": "private",
+							"visibility": "protected",
 							"type": ""
 						},
 						{
@@ -6278,7 +6280,7 @@
 								"$ref": "AAAAAAF3sUwd70LeV7c="
 							},
 							"name": "province",
-							"visibility": "private",
+							"visibility": "protected",
 							"type": ""
 						},
 						{
@@ -6288,7 +6290,7 @@
 								"$ref": "AAAAAAF3sUwd70LeV7c="
 							},
 							"name": "country",
-							"visibility": "private",
+							"visibility": "protected",
 							"type": ""
 						},
 						{
@@ -6298,7 +6300,7 @@
 								"$ref": "AAAAAAF3sUwd70LeV7c="
 							},
 							"name": "phone",
-							"visibility": "private",
+							"visibility": "protected",
 							"type": ""
 						},
 						{
@@ -6308,7 +6310,7 @@
 								"$ref": "AAAAAAF3sUwd70LeV7c="
 							},
 							"name": "mobile",
-							"visibility": "private",
+							"visibility": "protected",
 							"type": ""
 						},
 						{
@@ -6318,7 +6320,7 @@
 								"$ref": "AAAAAAF3sUwd70LeV7c="
 							},
 							"name": "tradeName",
-							"visibility": "private",
+							"visibility": "protected",
 							"type": ""
 						},
 						{
@@ -6328,7 +6330,7 @@
 								"$ref": "AAAAAAF3sUwd70LeV7c="
 							},
 							"name": "webSite",
-							"visibility": "private",
+							"visibility": "protected",
 							"type": ""
 						},
 						{
@@ -6338,7 +6340,7 @@
 								"$ref": "AAAAAAF3sUwd70LeV7c="
 							},
 							"name": "tags",
-							"visibility": "private",
+							"visibility": "protected",
 							"type": ""
 						},
 						{
@@ -6348,7 +6350,7 @@
 								"$ref": "AAAAAAF3sUwd70LeV7c="
 							},
 							"name": "contactType",
-							"visibility": "private",
+							"visibility": "protected",
 							"type": ""
 						},
 						{
@@ -6358,7 +6360,7 @@
 								"$ref": "AAAAAAF3sUwd70LeV7c="
 							},
 							"name": "group",
-							"visibility": "private",
+							"visibility": "protected",
 							"type": ""
 						},
 						{
@@ -6368,7 +6370,7 @@
 								"$ref": "AAAAAAF3sUwd70LeV7c="
 							},
 							"name": "email",
-							"visibility": "private",
+							"visibility": "protected",
 							"type": ""
 						},
 						{
@@ -6378,7 +6380,7 @@
 								"$ref": "AAAAAAF3sUwd70LeV7c="
 							},
 							"name": "phone",
-							"visibility": "private",
+							"visibility": "protected",
 							"type": ""
 						},
 						{
@@ -6388,7 +6390,8 @@
 								"$ref": "AAAAAAF3sUwd70LeV7c="
 							},
 							"name": "projects",
-							"visibility": "private"
+							"visibility": "protected",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -6397,7 +6400,8 @@
 								"$ref": "AAAAAAF3sUwd70LeV7c="
 							},
 							"name": "invoices",
-							"visibility": "private"
+							"visibility": "protected",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -6406,7 +6410,8 @@
 								"$ref": "AAAAAAF3sUwd70LeV7c="
 							},
 							"name": "products",
-							"visibility": "private"
+							"visibility": "protected",
+							"type": ""
 						}
 					],
 					"operations": [
@@ -6509,7 +6514,9 @@
 							"_parent": {
 								"$ref": "AAAAAAF3scMdo9VvbKI="
 							},
-							"name": "idProduct"
+							"name": "idProduct",
+							"visibility": "private",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -6723,7 +6730,9 @@
 							"_parent": {
 								"$ref": "AAAAAAF3scTniNX9Rhc="
 							},
-							"name": "idInvoice"
+							"name": "idInvoice",
+							"visibility": "private",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
