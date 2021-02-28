@@ -2897,7 +2897,7 @@
 										"$ref": "AAAAAAF3sxxjc3j8KXc="
 									},
 									"edgePosition": 2,
-									"text": "+1...*"
+									"text": "+1...1"
 								},
 								{
 									"_type": "EdgeLabelView",
@@ -5686,7 +5686,7 @@
 							"top": 376,
 							"width": 60,
 							"height": 25,
-							"text": "+1...*"
+							"text": "+1...1"
 						},
 						{
 							"_type": "UMLTextView",
@@ -6160,7 +6160,7 @@
 								"_parent": {
 									"$ref": "AAAAAAF3sxxjcnj48pw="
 								},
-								"name": "1...*",
+								"name": "1...1",
 								"reference": {
 									"$ref": "AAAAAAF3sVDcCEPQh08="
 								}
