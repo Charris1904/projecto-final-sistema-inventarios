@@ -20,7 +20,7 @@ public class Company extends Contact {
 		this.id_company = id_company;
 	}
 	
-	//*************************** Metodos Set & Get
+	//*************************** Set & Get
 	public int getId_company() {
 		return id_company;
 	}

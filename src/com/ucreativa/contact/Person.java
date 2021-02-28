@@ -24,7 +24,7 @@ public class Person extends Contact implements IUser{
 		this.id_person = id_person;
 	}
 	
-	//*************************** Metodos Set & Get
+	//*************************** Set & Get
 	public Company getCompany() {
 		return company;
 	}
@@ -58,7 +58,7 @@ public class Person extends Contact implements IUser{
 		System.out.println("Get Related Company");
 	}
 
-	//*************************** Metodos toString
+	//*************************** toString
 	@Override
 	public String toString() {
 		return "Person [id_person=" + id_person + ", company=" + company + ", job_title=" + job_title + "]";

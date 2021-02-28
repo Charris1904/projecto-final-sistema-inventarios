@@ -49,7 +49,7 @@ public class Contact {
 		this.invoices = invoices;
 	}
 
-	// *************************** Metodos Set & Get
+	// *************************** Set & Get
 	public String getName() {
 		return name;
 	}
@@ -186,7 +186,6 @@ public class Contact {
 		this.invoices = invoices;
 	}
 
-	// *************************** Metodos Clase
 	/**
 	 * Method that will display the information related to the selected contact in
 	 * the contact list
