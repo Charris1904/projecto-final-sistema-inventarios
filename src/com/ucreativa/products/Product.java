@@ -5,15 +5,7 @@ package com.ucreativa.products;
 
 import com.ucreativa.contact.Contact;
 
-/**
- * @author Idania
- *
- */
 public class Product {
-
-	/**
-	 * 
-	 */
 	
 	//Atributes
 	private int idProduct;
