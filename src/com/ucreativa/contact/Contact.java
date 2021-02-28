@@ -1,5 +1,9 @@
 package com.ucreativa.contact;
 
+import com.ucreativa.products.Product;
+import com.ucreativa.projects.Project;
+import com.ucreativa.sales.Invoice;
+
 import java.util.List;
 
 public class Contact {
@@ -18,11 +22,14 @@ public class Contact {
 	protected List<String> tags;
 	protected String id_contact_type;
 	protected int id_group;
+	protected List<Project> projects;
+	protected List<Product> products;
+	protected List<Invoice> invoices;
 
 	// Constructor
 	public Contact(String name, String address, String email, String city, String postal_code, String province,
 			String country, int phone, int mobile, String trade_name, String website, List<String> tags,
-			String id_contact_type, int id_group) {
+			String id_contact_type, int id_group, List<Project> projects, List<Product> products, List<Invoice> invoices) {
 		this.name = name;
 		this.address = address;
 		this.email = email;
@@ -37,6 +44,9 @@ public class Contact {
 		this.tags = tags;
 		this.id_contact_type = id_contact_type;
 		this.id_group = id_group;
+		this.projects = projects;
+		this.products = products;
+		this.invoices = invoices;
 	}
 
 	// *************************** Metodos Set & Get
@@ -150,6 +160,30 @@ public class Contact {
 
 	public void setId_group(int id_group) {
 		this.id_group = id_group;
+	}
+
+	public List<Project> getProjects() {
+		return projects;
+	}
+
+	public void setProjects(List<Project> projects) {
+		this.projects = projects;
+	}
+
+	public List<Product> getProducts() {
+		return products;
+	}
+
+	public void setProducts(List<Product> products) {
+		this.products = products;
+	}
+
+	public List<Invoice> getInvoices() {
+		return invoices;
+	}
+
+	public void setInvoices(List<Invoice> invoices) {
+		this.invoices = invoices;
 	}
 
 	// *************************** Metodos Clase

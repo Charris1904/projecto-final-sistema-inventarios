@@ -1,14 +1,19 @@
 package com.ucreativa.sales;
 
 public class Category {
-    private String id;
+    private int id;
     private String name;
 
-    public String getId() {
+    public Category(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -18,5 +23,13 @@ public class Category {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "Category{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                '}';
     }
 }

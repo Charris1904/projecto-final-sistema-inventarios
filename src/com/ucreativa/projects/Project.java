@@ -2,7 +2,10 @@ package com.ucreativa.projects;
 
 import com.ucreativa.contact.Contact;
 
+import java.util.List;
+
 public class Project {
+    private  int idProject;
     private String name;
     private String color;
     private String icon;
@@ -16,7 +19,35 @@ public class Project {
     private String key;
     private boolean createTaskOnlyThroughForms;
     private Contact contact;
-    private String[] tags;
+    private List<String> tags;
+
+    public Project(int idProject, String name, String color, String icon, String template, String status, String privacy,
+                   String startDate, String endDate, boolean sendNotifications, boolean acceptAutomatically, String key,
+                   boolean createTaskOnlyThroughForms, Contact contact, List<String> tags) {
+        this.idProject = idProject;
+        this.name = name;
+        this.color = color;
+        this.icon = icon;
+        this.template = template;
+        this.status = status;
+        this.privacy = privacy;
+        this.startDate = startDate;
+        this.endDate = endDate;
+        this.sendNotifications = sendNotifications;
+        this.acceptAutomatically = acceptAutomatically;
+        this.key = key;
+        this.createTaskOnlyThroughForms = createTaskOnlyThroughForms;
+        this.contact = contact;
+        this.tags = tags;
+    }
+
+    public int getIdProject() {
+        return idProject;
+    }
+
+    public void setIdProject(int idProject) {
+        this.idProject = idProject;
+    }
 
     public String getName() {
         return name;
@@ -122,11 +153,40 @@ public class Project {
         this.contact = contact;
     }
 
-    public String[] getTags() {
+    public List<String> getTags() {
         return tags;
     }
 
-    public void setTags(String[] tags) {
+    public void setTags(List<String> tags) {
         this.tags = tags;
+    }
+
+    @Override
+    public String toString() {
+        return "Project{" +
+                "idProject=" + idProject +
+                ", name='" + name + '\'' +
+                ", color='" + color + '\'' +
+                ", icon='" + icon + '\'' +
+                ", template='" + template + '\'' +
+                ", status='" + status + '\'' +
+                ", privacy='" + privacy + '\'' +
+                ", startDate='" + startDate + '\'' +
+                ", endDate='" + endDate + '\'' +
+                ", sendNotifications=" + sendNotifications +
+                ", acceptAutomatically=" + acceptAutomatically +
+                ", key='" + key + '\'' +
+                ", createTaskOnlyThroughForms=" + createTaskOnlyThroughForms +
+                ", contact=" + contact +
+                ", tags=" + tags +
+                '}';
+    }
+
+    /**
+     * @return The days between the current date and endDate
+     */
+    public int showRemainingDays(){
+        System.out.println("There are X days until the deadline, hurry up!");
+        return 0;
     }
 }

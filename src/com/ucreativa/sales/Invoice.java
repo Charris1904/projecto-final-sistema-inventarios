@@ -1,6 +1,5 @@
 package com.ucreativa.sales;
 
-import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
@@ -20,14 +19,14 @@ public class Invoice {
 
     private Category category;
     private String internalDescription;
-    private String[] tags;
+    private List<String> tags;
     private Map<Project, Product> projectsByItem;
     private boolean isDraft;
 
 
     public Invoice(Contact contact, String documentNumber, String date, String dueDate, String filePath, 
     		List<Product> products, String purchaseMessage, Map<String, String> customFields, Category category, 
-    		String internalDescription, String[] tags, Map<Project, Product> projectsByItem, boolean isDraft) {
+    		String internalDescription, List<String> tags, Map<Project, Product> projectsByItem, boolean isDraft) {
     	
         this.contact = contact;
         this.documentNumber = documentNumber;
@@ -57,7 +56,7 @@ public class Invoice {
                 ", customFields=" + customFields +
                 ", category=" + category +
                 ", internalDescription='" + internalDescription + '\'' +
-                ", tags=" + Arrays.toString(tags) +
+                ", tags=" + tags +
                 ", projectsByItem=" + projectsByItem +
                 ", isDraft=" + isDraft +
                 '}';
@@ -143,11 +142,11 @@ public class Invoice {
         this.internalDescription = internalDescription;
     }
 
-    public String[] getTags() {
+    public List<String> getTags() {
         return tags;
     }
 
-    public void setTags(String[] tags) {
+    public void setTags(List<String> tags) {
         this.tags = tags;
     }
 
@@ -173,6 +172,7 @@ public class Invoice {
      * @return: Sum of taxes for all the products
      */
     public double calculateTaxes(List<Product> products){
+        System.out.println("The total amount of taxes is X");
         return 0;
     }
 
@@ -181,6 +181,7 @@ public class Invoice {
      * @return: Sum of all products' cost without taxes
      */
     public double calculateTotal(List<Product> products){
+        System.out.println("The total amount of without taxes is Y");
         return 0;
     }
 
@@ -188,6 +189,7 @@ public class Invoice {
      * @return: Sum of all products' cost including the taxes
      */
     public double calculateTotalWithTaxes(){
+        System.out.println("The total amount to be paid is X + Y ");
         return calculateTaxes(products) + calculateTotal(products);
     }
 
@@ -195,6 +197,7 @@ public class Invoice {
      * @param item: New product which is added to the invoice
      */
     public void addProduct(Product item){
+        System.out.println("The new product was added");
         this.products.add(item);
     }
 
@@ -202,6 +205,7 @@ public class Invoice {
      * @param item: Product which is removed from the invoice
      */
     public void deleteProduct(Product item){
+        System.out.println("The product was deleted");
         this.products.remove(item);
     }
 }

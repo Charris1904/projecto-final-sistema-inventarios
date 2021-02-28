@@ -3,6 +3,8 @@
  */
 package com.ucreativa.products;
 
+import com.ucreativa.contact.Contact;
+
 /**
  * @author Idania
  *
@@ -14,6 +16,7 @@ public class Product {
 	 */
 	
 	//Atributes
+	private int idProduct;
 	private String name;
 	private String description;
 	private double subTotal;
@@ -24,15 +27,16 @@ public class Product {
 	private int barCode;
 	private double weight;
 	private int stock;
-	private String provider;
+	private Contact provider;
 	private double cost;
 	private double totalTax;
 	
 	//Constructor
 	public Product() {}
 
-	public Product(String name, String description, double subTotal, double taxes, double total, int sku,
-			int invoiceCode, int barCode, double weight, int stock, String provider, double cost, double totalTax) {
+	public Product(int idProduct, String name, String description, double subTotal, double taxes, double total, int sku,
+				   int invoiceCode, int barCode, double weight, int stock, Contact provider, double cost, double totalTax) {
+		this.idProduct = idProduct;
 		this.name = name;
 		this.description = description;
 		this.subTotal = subTotal;
@@ -49,6 +53,14 @@ public class Product {
 	}
 	
 	//Methods Get and Set
+	public int getIdProduct() {
+		return idProduct;
+	}
+
+	public void setIdProduct(int idProduct) {
+		this.idProduct = idProduct;
+	}
+
 	public String getName() {
 		return name;
 	}
@@ -129,11 +141,11 @@ public class Product {
 		this.stock = stock;
 	}
 
-	public String getProvider() {
+	public Contact getProvider() {
 		return provider;
 	}
 
-	public void setProvider(String provider) {
+	public void setProvider(Contact provider) {
 		this.provider = provider;
 	}
 

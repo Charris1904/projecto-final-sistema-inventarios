@@ -1,5 +1,9 @@
 package com.ucreativa.contact;
 
+import com.ucreativa.products.Product;
+import com.ucreativa.projects.Project;
+import com.ucreativa.sales.Invoice;
+
 import java.util.List;
 
 public class Company extends Contact {
@@ -7,11 +11,12 @@ public class Company extends Contact {
 	private int id_company;
 
 	//Constructor
-	public Company(String name, String address, String email, String city, String postal_code, String province,
-			String country, int phone, int mobile, String trade_name, String website, List<String> tags,
-			String id_contact_type, int id_group, int id_company) {
+	public Company(int id_company, String name, String address, String email, String city, String postal_code, String province,
+				   String country, int phone, int mobile, String trade_name, String website, List<String> tags,
+				   String id_contact_type, int id_group, List<Project> projects,
+				   List<Product> products, List<Invoice> invoices) {
 		super(name, address, email, city, postal_code, province, country, phone, mobile, trade_name, website, tags,
-				id_contact_type, id_group);
+				id_contact_type, id_group, projects, products, invoices);
 		this.id_company = id_company;
 	}
 	
@@ -29,8 +34,8 @@ public class Company extends Contact {
 	* specific Company
 	* @param idCompany
 	*/
-	public void getRelatedPerson(String idCompany) {
-		System.out.println("Get Related Person");
+	public void getRelatedPeople(String idCompany) {
+		System.out.println("Get Related People");
 	}
 
 	//*************************** Metodos toString
