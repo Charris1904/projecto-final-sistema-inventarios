@@ -168,7 +168,7 @@ public class Product {
 		return "Product [name=" + name + ", description=" + description + ", subTotal=" + subTotal + ", taxes=" + taxes
 				+ ", total=" + total + ", sku=" + sku + ", invoiceCode=" + invoiceCode + ", barCode=" + barCode
 				+ ", weight=" + weight + ", stock=" + stock + ", provider=" + provider + ", cost=" + cost
-				+ ", totalTax=" + totalTax + ", toString()=" + super.toString() + "]";
+				+ ", totalTax=" + totalTax + "]";
 	}
 	
 }
