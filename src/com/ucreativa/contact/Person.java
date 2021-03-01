@@ -78,4 +78,9 @@ public class Person extends Contact implements IUser{
 	public void ResetPassword() {
 		System.out.println("Reset Password Person");
 	}
+
+	@Override
+	public void identifyContactType() {
+		System.out.println("This contact is a person");
+	}
 }

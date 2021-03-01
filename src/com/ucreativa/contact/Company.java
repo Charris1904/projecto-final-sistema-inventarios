@@ -43,4 +43,9 @@ public class Company extends Contact {
 	public String toString() {
 		return "Company [id_company=" + id_company + "]";
 	}
+
+	@Override
+	public void identifyContactType() {
+		System.out.println("This contact is a company");
+	}
 }
