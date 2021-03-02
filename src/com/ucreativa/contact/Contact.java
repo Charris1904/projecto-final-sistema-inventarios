@@ -6,7 +6,7 @@ import com.ucreativa.sales.Invoice;
 
 import java.util.List;
 
-public class Contact {
+public abstract class Contact {
 
 	protected String name;
 	protected String address;
@@ -198,9 +198,7 @@ public class Contact {
 	 * This method will identify if the selected contact is a Client, Provider or
 	 * Lead
 	 */
-	public void identifyContactType() {
-		System.out.println("Identify Contact Type");
-	}
+	public abstract void identifyContactType();
 
 	/**
 	 * Method that will display the Contact summary and the related information as
